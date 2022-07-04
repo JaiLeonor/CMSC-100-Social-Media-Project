@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}
+
+body {
+  background-color: #18191a;
+}
+
+/*Login style*/
+.login {
+  border-radius: 10px;
+  width: 390px;
+  padding-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: white;
+}
+
+.login input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  padding: 0px 20px;
+  height: 50px;
+  width: 90%;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.login button {
+  border-radius: 10px;
+  height: 50px;
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  background: crimson;
+  color: white;
+  border-style: none;
+  outline: none;
+}
+
+.login button:hover {
+  cursor: pointer;
+}
+
+.login hr {
+  width: 90%;
+  margin: auto;
+}
+
+.login .signup {
+  margin-top: 30px;
+  background: #42b72a;
+}
+
+.login p {
+  margin: 0px 30px;
+  color: red;
+  font-size: 12px;
+}
+
+/*Navbar Style*/
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #242526;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  display: block;
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo header {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .logo span {
+  color: crimson;
+}
+
+.navbar input {
+  border-radius: 50px;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 12px;
+  margin: 0px 10px;
+  color: white;
+  background: #3a3b3c;
+  border-style: none;
+  outline: none;
+}
+
+.navbar .logo-search-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+.navbar .menu li:hover {
+  color: crimson;
+}
+
+/*Shortcut Sidebar Style*/
+.shortcut-sidebar {
+  position: fixed;
+  left: 0;
+  width: 22%;
+  height: 100%;
+  padding-top: 90px;
+  padding-left: 8px;
+  overflow-y: auto;
+  display: inline-block;
+}
+
+.shortcut-main {
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.shortcut {
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.shortcut:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.shortcut img {
+  width: 28px;
+  height: 28px;
+  margin-top: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  float: left;
+}
+
+.shortcut p {
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  line-height: 28px;
+  color: white;
+  padding: 12px 0px;
+  box-sizing: border-box;
+}
+
+.shortcut-section header {
+  color: #b0b3b8;
+  font-size: 17px;
+  padding: 20px 0px 4px;
+  margin-left: 8px;
+}
+
+.shortcut-sidebar footer {
+  font-size: 13px;
+  padding-top: 30px;
+  padding-left: 10px;
+  color: #b0b3b8;
+}
+
+/*Feed Style*/
+main {
+  padding-top: 100px;
+  justify-content: center;
+  align-content: center;
+}
+
+.add-post {
+  background: #242526;
+  border-radius: 10px;
+  margin: 20px 30%;
+}
+
+.add-post img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 20px;
+  margin-right: 8px;
+  float: left;
+}
+
+.add-post form {
+  padding: 10px 0px;
+}
+
+.add-post input {
+  border-radius: 50px;
+  height: 40px;
+  width: 82%;
+  font-size: 20px;
+  padding: 8px 12px;
+  margin: 10px 0px;
+  color: white;
+  background: #3a3b3c;
+  border-style: none;
+  outline: none;
+}
+
+.post {
+  border-radius: 10px;
+  margin: 20px 0px;
+  margin: 0px 30%;
+  color: white;
+  background: #242526;
+}
+
+.post img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 20px;
+  margin-right: 8px;
+  float: left;
+}
+
+.post-detail {
+  margin: 10px 0px;
+  color: #b0b3b8;
+}
+
+.post-detail p {
+  padding-top: 10px;
+  color: white;
+}
+
+.dropdown {
+  float: right;
+  padding: 10px;
+}
+
+.post-text {
+  padding: 4px 16px 16px;
+}
+
+/*Suggestions Sidebar Style*/
+.suggestions-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 22%;
+  height: 100%;
+  padding-top: 90px;
+  padding-left: 8px;
+  overflow-y: auto;
+  display: inline-block;
+}
+
+.suggestions-sidebar header {
+  color: #b0b3b8;
+  font-size: 17px;
+  padding: 20px 0px 4px;
+  margin-left: 8px;
+}
+
+.ad-section {
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.ad {
+  background: #242526;
+  border-radius: 10px;
+  margin: 8px;
+  text-align: center;
+  padding: 12px;
+  padding-top: 0px;
+  color: white;
+}
+
+.ad header {
+  text-align: left;
+}
+
+.ad a img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.ad p {
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  padding: 12px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+.friend-request {
+  background: #242526;
+  border-radius: 10px;
+  margin: 8px;
+  text-align: center;
+  padding: 12px;
+  margin-top: 15px;
+  color: white;
+}
+
+.friend-request a {
+  color: white;
+}
+
+.friend-request img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 0px;
+  margin-right: 10px;
+  float: left;
+}
+
+.friend-request p {
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.friend-request button {
+  outline: none;
+}
+
+.friend-request button:hover {
+  cursor: pointer;
+}
+
+.reject {
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin: 0px 5px;
+  background: #ffffff1a;
+  color: white;
+  border-style: none;
+}
+
+.accept {
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin: 0px 5px;
+  background: crimson;
+  color: white;
+  border-style: none;
+}
+
+/*Modal Style*/
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.modal-content {
+  width: 500px;
+  height: 125px;
+  background: #242526;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+}
+
+.modal-content input {
+  border-radius: 50px;
+  height: 60px;
+  width: 82%;
+  font-size: 25px;
+  padding: 0px 20px;
+  float: right;
+  color: white;
+  background: #3a3b3c;
+  border-style: none;
+  outline: none;
+  display: block;
+}
+
+.modal-content img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+/*Post Options Style*/
+.dropbtn {
+  background-color: #242526;
+  color: gray;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #242526;
+  border-radius: 5px;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content button {
+  width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 5px auto;
+  background: #242526;
+}
+
+.dropdown-content button:hover {
+  background-color: #3a3b3c;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Find Style*/
+.find {
+  background: #242526;
+  border-radius: 10px;
+  margin: 20px 30%;
+  height: 80px;
+  color: gray;
+  padding: 15px;
+}
+
+.find img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  float: left;
+}
+
+.find a {
+  color: white;
+}
+
+.find button {
+  float: right;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border-style: none;
+  outline: none;
+  border-radius: 5px;
+  background: #ffffff1a;
+  color: white;
+}
+
+.find button:hover {
+  cursor: pointer;
+  background: crimson;
+}
+
+/*Profile Style*/
+.profile {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.profile img {
+  border-radius: 50%;
+}
